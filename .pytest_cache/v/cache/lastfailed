@@ -1,0 +1,7 @@
+{
+  "tests/test_auth.py::test_force_fail": true,
+  "tests/test_auth.py::test_password_none": true,
+  "tests/test_auth.py::test_password_short": true,
+  "tests/test_auth.py::test_password_no_digit": true,
+  "tests/test_auth.py::test_password_empty_string": true
+}
