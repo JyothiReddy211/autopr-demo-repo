@@ -1,9 +1,8 @@
 import re
 
 def validate_password(password):
-
     if password is None:
-        return False
+        raise ValueError("Password cannot be None")
 
     if len(password) < 8:
         return False
