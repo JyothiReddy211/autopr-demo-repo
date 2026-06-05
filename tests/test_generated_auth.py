@@ -1,20 +1,17 @@
-from src.auth import validate_password
 import pytest
+from src.auth import validate_password
 
-def test_reject_none_values():
+def test_password_none():
     with pytest.raises(ValueError):
         validate_password(None)
 
-def test_minimum_8_characters():
+def test_password_length():
     with pytest.raises(ValueError):
-        validate_password("1234a")
+        validate_password("abc123")
 
-def test_at_least_one_digit():
+def test_password_no_digit():
     with pytest.raises(ValueError):
         validate_password("abcdefgh")
 
-def test_valid_password():
-    assert validate_password("12345678") == True
-
-def test_password_with_more_than_8_characters_and_at_least_one_digit():
-    assert validate_password("1234567890a") == True
+def test_password_valid():
+    assert validate_password("abcd1234") is True
