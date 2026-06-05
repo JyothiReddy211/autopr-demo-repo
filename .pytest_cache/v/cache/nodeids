@@ -28,9 +28,13 @@
   "tests/test_generated_auth.py::test_password_with_more_than_8_characters_and_at_least_one_digit",
   "tests/test_generated_auth.py::test_reject_none_values",
   "tests/test_generated_auth.py::test_valid_password",
+  "tests/test_generated_auth.py::test_validate_password_min_length",
   "tests/test_generated_auth.py::test_validate_password_minimum_length",
+  "tests/test_generated_auth.py::test_validate_password_reject_none",
   "tests/test_generated_auth.py::test_validate_password_rejects_none",
+  "tests/test_generated_auth.py::test_validate_password_require_digit",
   "tests/test_generated_auth.py::test_validate_password_requires_digit",
+  "tests/test_generated_auth.py::test_validate_password_valid",
   "tests/test_generated_auth.py::test_validate_password_valid_password",
   "tests/test_user_service.py::test_create_user"
 ]
